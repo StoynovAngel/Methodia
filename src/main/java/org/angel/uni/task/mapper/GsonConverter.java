@@ -10,11 +10,11 @@ import java.nio.file.Files;
 
 public class GsonConverter {
 
-    private static final String path = "src/main/java/org/angel/uni/task/files/data.json";
+    private static final String PATH = "src/main/java/org/angel/uni/task/files/data.json";
 
     public static DataWrapper getContentFromJson() {
         try {
-            File file = new File(path);
+            File file = new File(PATH);
             if (!file.exists()) {
                 throw new FileNotFoundException("No such file found");
             }
