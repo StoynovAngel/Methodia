@@ -13,7 +13,7 @@ public class WordCounter {
 
     public static void wordCounterWithMap() {
         DataWrapper wrapper = GsonConverter.getContentFromJson();
-        String sentence = wrapper.getSentence();
+        String sentence = wrapper.getWords();
         System.out.println(sentence);
 
         if (sentence == null) {

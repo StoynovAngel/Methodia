@@ -1,17 +1,24 @@
 package org.angel.uni.task.task1;
 
+import org.angel.uni.task.mapper.GsonConverter;
+import org.angel.uni.task.wrapper.DataWrapper;
+
 public class ReverseString {
 
-    public static String reverseString(String string) {
-        if (string == null || string.isEmpty()) {
-            return "nothing";
+    private static final DataWrapper dataWrapper = GsonConverter.getContentFromJson();
+    private static final String EXAMPLE = dataWrapper.getWords();
+
+    public static void reverseString() {
+        if (EXAMPLE == null || EXAMPLE.isEmpty()) {
+            return;
         }
 
-        char[] chars = string.toCharArray();
         String reversed = "";
-        for (int i = chars.length - 1; i >= 0; i--) {
-            reversed += chars[i];
+        int[] codePoints = EXAMPLE.codePoints().toArray();
+        for (int i = codePoints.length - 1; i >= 0; i--) {
+            reversed += new String(Character.toChars(codePoints[i]));
         }
-        return reversed;
+        System.out.println(EXAMPLE);
+        System.out.println(reversed);
     }
 }

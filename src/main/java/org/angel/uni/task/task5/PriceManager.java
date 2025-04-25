@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PriceManager {
 
-    public static double getAveragePrice() {
+    public static void saveAveragePriceToCSV() {
         List<String[]> rows = CSVConverter.getContentFromCSV();
         List<Integer> prices = new ArrayList<>();
         double sum = 0;
@@ -23,10 +23,6 @@ public class PriceManager {
             System.out.println("String cannot be converted to integer. " + e.getMessage());
         }
         System.out.println(prices);
-        return sum / prices.size();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(getAveragePrice());
+        CSVConverter.writeContentToCSV(sum / prices.size());
     }
 }

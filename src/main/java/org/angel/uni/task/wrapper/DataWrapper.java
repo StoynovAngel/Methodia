@@ -15,7 +15,7 @@ public class DataWrapper {
         return emojis;
     }
 
-    public String getSentence() {
+    public String getWords() {
         return words;
     }
 }
