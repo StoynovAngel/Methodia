@@ -21,6 +21,7 @@ public class PriceManager {
             }
         } catch (NumberFormatException e) {
             System.out.println("String cannot be converted to integer. " + e.getMessage());
+            return;
         }
         System.out.println(prices);
         CSVConverter.writeContentToCSV(sum / prices.size());

@@ -6,6 +6,7 @@ public class DataWrapper {
     private List<String> strings;
     private List<String> emojis;
     private String words;
+    private String plain;
 
     public List<String> getStrings() {
         return strings;
@@ -17,5 +18,9 @@ public class DataWrapper {
 
     public String getWords() {
         return words;
+    }
+
+    public String getPlain() {
+        return plain;
     }
 }

@@ -1,5 +1,6 @@
 {
   "strings": ["asd", "", "gd.g324", null, "hello", "", "тестов"],
   "emojis": ["😎", "🎉", "🚀", "💡", "✅", "🔥"],
-  "words": "lorem ipsum 😎 dolor $# sit amet, 🎉lorem ipsum elit, lorem ipsum lorem lorem ut ✅ elit et dolore 🔥 magna aliqua."
+  "words": "lorem ipsum 😎 dolor $# sit amet, 🎉lorem ipsum elit, lorem ipsum lorem lorem ut ✅ elit et dolore 🔥 magna aliqua.",
+  "plain": "lorem ipsum dolor $# sit amet, lorem ipsum elit, lorem ipsum lorem lorem ut elit et dolore magna aliqua."
 }

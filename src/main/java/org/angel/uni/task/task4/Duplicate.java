@@ -13,8 +13,8 @@ public class Duplicate {
     private static final String EXAMPLE = dataWrapper.getWords();
 
     public static void findDuplicateCharacters() {
-        if (EXAMPLE == null) {
-            System.out.println("Input is null.");
+        if (EXAMPLE == null || EXAMPLE.isEmpty()) {
+            System.out.println("Input is null or empty.");
             return;
         }
 

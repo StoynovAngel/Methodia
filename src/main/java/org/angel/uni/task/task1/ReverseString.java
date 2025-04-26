@@ -10,6 +10,7 @@ public class ReverseString {
 
     public static void reverseString() {
         if (EXAMPLE == null || EXAMPLE.isEmpty()) {
+            System.out.println("String cannot be null or empty. Provided: " + EXAMPLE);
             return;
         }
 

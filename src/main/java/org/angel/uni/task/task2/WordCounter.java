@@ -13,11 +13,11 @@ public class WordCounter {
 
     public static void wordCounterWithMap() {
         DataWrapper wrapper = GsonConverter.getContentFromJson();
-        String sentence = wrapper.getWords();
+        String sentence = wrapper.getPlain();
         System.out.println(sentence);
 
-        if (sentence == null) {
-            System.out.println("Sentence cannot be null.");
+        if (sentence == null || sentence.isEmpty()) {
+            System.out.println("Sentence cannot be null or empty. Provided: " + sentence);
             return;
         }
 
